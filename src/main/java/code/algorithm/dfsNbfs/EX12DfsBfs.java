@@ -1,7 +1,5 @@
 package code.algorithm.dfsNbfs;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;

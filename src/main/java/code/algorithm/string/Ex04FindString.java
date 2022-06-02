@@ -56,6 +56,22 @@ public class Ex04FindString {
         return answer;
     }
 
+    public ArrayList<String> solution3(int n, String[] str){
+        ArrayList<String> answer =  new ArrayList<>();
+
+        for ( String s : str) {
+            char[] t = s.toCharArray();
+            for(int x=0; x< Math.ceil(t.length/2); x++ ){
+                char tmp = t[x];
+                t[x] = t[t.length-1-x];
+                t[t.length-1-x] = tmp;
+
+            }
+            answer.add(String.valueOf(t));
+        }
+        return answer;
+    }
+
     public static void main(String[] args) {
         Ex04FindString T = new Ex04FindString();
         Scanner sc = new Scanner(System.in);

@@ -1,4 +1,5 @@
 package code.algorithm.string;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 /**
  * 중복문자제거
@@ -15,6 +16,18 @@ import java.util.Scanner;
  */
 public class Ex06FindString {
 
+
+    public String solution2( String str){
+        String answer="";
+        LinkedHashSet<Character> set = new LinkedHashSet<>();
+        for (char x : str.toCharArray()) {
+            set.add(x);
+        }
+        for (char k: set){
+            answer+=k;
+        }
+        return answer;
+    }
 
     private String Solution(String str) {
         String answer="";

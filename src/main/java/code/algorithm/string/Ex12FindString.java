@@ -45,6 +45,21 @@ public class Ex12FindString {
 
     }
 
+    public String solution2( String str){
+        String answer = " ";
+
+        str =  str.replace("#","1").replace("*", "0");
+
+        while (str.length()>0){
+            String tmp = str.substring(0,7);
+            int rex = Integer.parseInt(tmp,2);
+            answer+=(char)rex;
+            str =  str.substring(7);
+        }
+
+        return answer;
+    }
+
 
     public static void main(String[] args) {
         Ex12FindString T = new Ex12FindString();

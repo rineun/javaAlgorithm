@@ -43,6 +43,21 @@ public class Ex07FindString {
         return answer;
     }
 
+    public String solution3( String str){
+        String answer="YES";
+        char[] strArr = str.toUpperCase().toCharArray();
+        for(int i=0; i< Math.ceil(strArr.length/2); i++){
+            if(strArr[i]!=  strArr[strArr.length-1-i]) {
+                answer ="NO";
+                break;
+            }
+        }
+
+
+        return answer;
+    }
+
+
     public static void main(String[] args) {
         Ex07FindString T = new Ex07FindString();
         Scanner sc = new Scanner(System.in);
