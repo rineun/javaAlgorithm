@@ -1,9 +1,6 @@
 package code.algorithm.grid;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**

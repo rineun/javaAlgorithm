@@ -5,16 +5,18 @@ import java.util.*;
 public class Coding {
 
 
-    public String solution( String str){
-        String answer = " ";
+    public String solution(int[] str){
+        String answer = "";
+        ArrayList<Integer> tmp = new ArrayList<>();
+        tmp.add(str[0]);
 
-        str =  str.replace("#","1").replace("*", "0");
 
-        while (str.length()>0){
-            String tmp = str.substring(0,7);
-            int rex = Integer.parseInt(tmp,2);
-            answer+=(char)rex;
-             str =  str.substring(7);
+        for(int i=1; i< str.length; i++){
+            if(str[i] > str[i-1]) tmp.add(str[i]);
+        }
+
+        for(int x  : tmp){
+            answer += x + " ";
         }
 
         return answer;
@@ -26,30 +28,12 @@ public class Coding {
     public static void main(String[] args) {
         Coding T = new Coding();
         Scanner kb = new Scanner(System.in);
-        String str = kb.nextLine();
-      //  char c = kb.next().charAt(0);
-       // String str = kb.nextLine();
-         //char c = kb.next().charAt(0);
-
-        /*
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        String[] str = new String[n];
-
-        for (int i = 0; i < n; i++) {
-            str[i]= sc.next();
+        int n = kb.nextInt();
+        int[] arr= new int[n];
+        for(int i=0; i<n; i++){
+            arr[i]=kb.nextInt();
         }
+        System.out.println(T.solution(arr));
 
-        for (String  x :T.solution(n, str)) {
-            System.out.println(x);
-        }
-
-
-
-        for (int x :T.solution(str, c)) {
-            System.out.print(x+ " ");
-        }       */
-
-       System.out.println(T.solution( str));
     }
 }

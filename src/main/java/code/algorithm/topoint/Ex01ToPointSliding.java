@@ -23,33 +23,17 @@ import java.util.Scanner;
  */
 
 public class Ex01ToPointSliding {
-    public String solution(int n, int m, int[] a, int[] b) {
-        String answer = "";
+    public ArrayList<Integer> solution(int n, int m, int[] a, int[] b) {
+        ArrayList<Integer> answer = new ArrayList<>();
 
         ArrayList<Integer> list = new ArrayList<>();
-
-        int posA=0, posB=0;
-        while(posA<n && posB<m){
-            if(a[posA] > b[posB]) {
-                list.add(b[posB++]);
-                list.add(a[posA++]);
-            }
-            else if(a[posA] > b[posB])   list.add(b[posB++]);
-            else list.add(a[posA++]);
+        int p1=0, p2=0;
+        while(p1<n && p2<m){
+            if(a[p1]<b[p2]) answer.add(a[p1++]);
+            else answer.add(b[p2++]);
         }
-
-        while (posA < a.length){
-            list.add(a[posA++]);
-        }
-
-        while (posB < b.length){
-            list.add(b[posB++]);
-        }
-
-        for (int x: list) {
-            answer += x+ " ";
-        }
-
+        while(p1<n) answer.add(a[p1++]);
+        while(p2<m) answer.add(b[p2++]);
 
         return answer;
 
