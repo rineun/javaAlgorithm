@@ -1,7 +1,7 @@
-package code.algorithm.array;
+package code.algorithm.calulate;
 
 /**
- *Write a function:
+ * 주어진 범위내에서 어떤 정수 값으로 나누어 떨어지는 수의 개수를 구하면 되는 문제다
  *
  * class Solution { public int solution(int A, int B, int K); }
  *

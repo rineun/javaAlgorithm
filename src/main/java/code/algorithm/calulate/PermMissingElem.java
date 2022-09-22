@@ -1,10 +1,12 @@
-package code.algorithm.array;
-
-import code.algorithm.MathCul;
+package code.algorithm.calulate;
 
 import java.util.Arrays;
 
 /**
+ *
+ *
+ * 길이가 N, 요소가 [1..(N + 1)] 의 숫자로 채워져있는 배열에서 빠진 숫자를 찾는 문제이다.
+ *
  *
  * An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.
  *

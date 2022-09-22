@@ -1,9 +1,17 @@
-package code.algorithm.array;
+package code.algorithm.hashmap;
 
 import java.util.Arrays;
 
 /**
- *
+ *N개의 길이를 가진 배열 A가 주어진다
+ * A는 1~N까지 각 요소를 한개씩 모두 가지고 있어야 한다
+ * 예를 들면, A = {4,1,3,2}, A의 길이는 4이다
+ * 즉, 1,2,3,4의 원소를 가지고 있으니 True이다
+ * B = {4,1,3} 이면, 1,2,3의 원소 중 2가 빠져있다 따라서 False이다
+ true이면 1, 아니면 0을 출력한다
+
+
+
  * A non-empty array A consisting of N integers is given.
  *
  * A permutation is a sequence containing each element from 1 to N once, and only once.

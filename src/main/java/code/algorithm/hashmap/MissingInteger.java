@@ -1,8 +1,14 @@
-package code.algorithm.array;
+package code.algorithm.hashmap;
 
 import java.util.HashSet;
 import java.util.Set;
 /*
+길이 N의 배열 A가 주어진다
+A에 포함되어 있지 않은 가장 작은 양의 정수를 구하는 문제이다
+A = [1,3,6,4,1,2] -> A에 없는 가장 작은 양의 정수는 5이다
+A = [-1,-3] -> A에 없는 가장 작은 양의 정수는 1이다
+<p>A = [1,2,3] -&gt; A에 없는 가장 작은 양의 정수는 4이다&nbsp;</p>
+
 
 This is a demo task.
 

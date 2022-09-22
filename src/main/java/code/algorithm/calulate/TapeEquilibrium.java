@@ -1,6 +1,10 @@
-package code.algorithm.array;
+package code.algorithm.calulate;
 
 /**TapeEquilibrium
+ *
+ *  사이즈의 배열 A를 P번 순회하면서 (0 < P < N), |sum(A[0]...A[P - 1]) - sum(A[P]...A[N - 1])|가 최소인 값을 구하는 문제이다.
+ *  즉, 배열을 순회하면서 P를 기준으로 좌측의 배열의 합과, 우측의 배열(P번쨰 요소 포함)의 합의 차이의 절대값을 구하면서 최소값을 찾는 문제이다.
+ *
  *
  * A non-empty array A consisting of N integers is given. Array A represents numbers on a tape.
  *

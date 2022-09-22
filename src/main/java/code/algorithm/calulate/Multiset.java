@@ -1,4 +1,4 @@
-package code.algorithm.array;
+package code.algorithm.calulate;
 import java.util.*;
 
 /**
